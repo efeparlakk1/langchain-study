@@ -10,7 +10,7 @@
 
 *Build muscle memory for LangChain v1 — from messages to agents, RAG, and LangGraph.*
 
-[Curriculum](./guide.md) · [LangChain Docs](https://docs.langchain.com/oss/python/langchain/overview)
+[LangChain Docs](https://docs.langchain.com/oss/python/langchain/overview)
 
 </div>
 
@@ -20,7 +20,7 @@
 
 A structured, notebook-by-notebook study path for **LangChain v1.0 – v1.3.15** (`>=1.0,<2`).
 
-The goal is not to memorize APIs — it is to **write them from scratch**. Each lesson has a mental model, import map, tasks, and a memory checkpoint. Full syllabus lives in [`guide.md`](./guide.md).
+The goal is not to memorize APIs — it is to **write them from scratch**. Each lesson covers a mental model, core imports, hands-on tasks, and a memory checkpoint before moving on.
 
 ```text
 messages → chat model → prompts → structured output
@@ -74,9 +74,7 @@ Open `00_setup.ipynb` and work through lessons in order. Pass each **checkpoint*
 | 09 | `09_rag.ipynb` | RAG | ⬜ |
 | 10 | `10_memory.ipynb` | Memory | ⬜ |
 | 11 | `11_langgraph.ipynb` | LangGraph minimum | ⬜ |
-| 99 | `99_from_memory.ipynb` | Final exam (no guide) | ⬜ |
-
-> Task details, traps, and version notes for every lesson → [`guide.md`](./guide.md)
+| 99 | `99_from_memory.ipynb` | Final exam (from memory) | ⬜ |
 
 ---
 
@@ -120,7 +118,7 @@ dict  →  ChatPromptTemplate  →  messages
 
 ## What *not* to use
 
-Legacy patterns from pre-v1 tutorials — see the full blocklist in [`guide.md`](./guide.md):
+Pre-v1 patterns — do not copy these from old tutorials:
 
 `LLMChain` · `AgentExecutor` · `from langchain.prompts import ...` · `ConversationBufferMemory`
 
@@ -132,8 +130,8 @@ Use **LCEL**, **`bind_tools`**, and **`create_agent`** instead.
 
 ```text
 langchain-study/
-├── guide.md              # full curriculum (start here)
 ├── 00_setup.ipynb …      # one notebook per lesson
+├── README.md
 ├── pyproject.toml
 └── .env                  # secrets (gitignored)
 ```
