@@ -11,3 +11,4 @@ wheels/
 
 #credentials
 .env
+guide.md
